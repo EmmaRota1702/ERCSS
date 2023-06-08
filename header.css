@@ -1,0 +1,187 @@
+h3, h4, h5, h6 {
+    color: steelblue/*var(--dark-color)*/;
+    text-shadow: 2px 0 5px lightskyblue /*var(--medium-dark-color) è la sfumatore attorno al testo*/;
+    border-bottom: solid 3px darkgreen/*var(--medium-color) è il colore della sottolineatura*/;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+
+header{
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    /*border: dashed 5px lightskyblue;
+    border-radius: 50px;*/
+    background-image: url("ninfee.jpg"); /*linear-gradient(lightskyblue, antiquewhite);*/
+    width: 900px;
+    height: 500px;
+    background-position: center;
+    /* background-position-x: -100px;
+     width: 500px;
+     height: 200px;*/
+}
+/*container {
+    background: no-repeat 100px bottom/200% url("ninfea.jpg");
+}*/
+
+section{
+    padding: 5% 5px 0;
+    /*text-align: right;*/
+    /*background: linear-gradient(lightskyblue,lightblue);*/
+}
+
+section > header + div {
+    border-radius: 5px 0 0 0;
+}
+
+section h3 {
+    margin-top: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 0 0;
+}
+
+header h1, header h2{
+    font-family: "Zen Loop", cursive;
+    padding: 0;
+    /*margin-top: -8px;*/
+    margin-bottom: 10px;
+    /*color: darkcyan;*/
+    font-size: 2em;
+    line-height: 8em;
+    border: unset;
+    right: 10px;
+    left: 40px;
+    position: absolute;
+
+}
+
+header h2 {
+    font-family: "Zen Loop", cursive;
+    font-style: italic;
+    /*font-size: 3em;*/
+    /*color: lightblue;*/
+    text-shadow: 3px 0 lightskyblue;
+}
+
+header h1 {
+    bottom: 120px;
+    color: springgreen;
+    text-shadow: 3px 0 white;
+}
+header h2{
+    bottom: 100px;
+    color: teal;
+    font-size: 30px;
+}
+header{
+    background: /*linear-gradient(lightskyblue,lightblue), linear-gradient(lightblue,lightskyblue),*/ no-repeat url("ninfee.jpg") 20% -1%/cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(100%- 40px);
+    z-index: 99;
+    height: 50vb;
+    padding: 20px;
+}
+
+
+/* HEADER CONTAINER
+section{
+    text-align: right;
+}
+
+section > header + div{
+    border-radius: 2em 0 0 0;
+}
+
+section h3 {
+    margin-top: 0;
+    padding: 0;
+}
+*/
+
+
+
+/* HEADER TITLES
+header h1, header h2{
+    font-family: "Zen Loop", cursive;
+    padding: 0;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+    font-size: 4.5em;
+    line-height: .8em;
+    border: unset;
+    position: absolute;
+    right: 20px;
+}
+
+header h2 {
+    font-family: "Zen Loop", cursive;
+    font-style: italic;
+    font-size: 3em;
+    color: var(--medium-dark-color);
+    text-shadow: 2px 0 5px var(--medium-color);
+}
+*/
+
+
+/* HEADER TITLEs POSITIONING
+header h1 {
+    bottom: 120px;
+}
+
+header h2 {
+    bottom: 60px;
+}
+
+header abbr {
+    text-decoration: unset;
+    color: black;
+}
+
+header{
+    background: linear-gradient(#D9D4D200, #D9D4D200, var(--medium-dark-color)), linear-gradient(90deg, #D9D4D200, var(--light-color)),  no-repeat url("images/AdobeStock_466959309_Preview.jpeg") 0% -0% / cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: calc(100% - 40px);
+    height: 500px;
+    padding: 20px;
+}
+
+/* FOOTER STUFF PLACED INTO HEADER AREA */
+div.wrapper{
+    display: none;
+}
+
+footer{
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 1000px;
+    right: 40px;
+    left: 63px;
+    z-index: 2;
+}
+
+footer a{
+    display: inline-block;
+    background: steelblue;
+    padding: 0.5em 1.2em;
+}
+
+footer a:link{
+    color: lightskyblue;
+}
+
+footer a:nth-child(2){
+    display: none;
+}
